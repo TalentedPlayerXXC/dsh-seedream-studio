@@ -1,0 +1,36 @@
+# 依赖
+node_modules/
+package-lock.json
+pnpm-lock.yaml
+yarn.lock
+
+# 打包产物
+*.tgz
+
+# 凭据与本地配置：这是开源项目，任何 Key 都不该进仓库。
+# 插件本身只从 DSH 凭据库读 Key，这里只是防呆兜底。
+.env
+.env.*
+*.key
+*.pem
+.credentials*
+**/.credentials*
+api-key*
+.api-key*
+
+# 系统与编辑器
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+.vscode/
+.idea/
+
+# 生图产物（若有人把保存目录指到仓库里）
+images/
+seedream-images/
+.history.json
+
+# 日志
+*.log
+logs/

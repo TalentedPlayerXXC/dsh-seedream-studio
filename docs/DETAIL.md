@@ -1,0 +1,1 @@
+![The Seedream Studio main screen: an Agent Plan notice at the top, a prompt field with model and size selectors, a reference-image drop zone, the generate button, and the watermark and prompt-enhancement toggles](preview.png)
