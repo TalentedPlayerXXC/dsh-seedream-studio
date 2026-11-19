@@ -2,21 +2,32 @@
 
 豆包 Seedream（火山方舟 AgentPlan）生图的图形工作台：侧边栏整页 UI + agent 工具，两条入口共用同一套生成实现。
 
-[![npm](https://img.shields.io/npm/v/dsh-seedream-studio.svg)](https://www.npmjs.com/package/dsh-seedream-studio)
-[![license](https://img.shields.io/npm/l/dsh-seedream-studio.svg)](LICENSE)
+[![license](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 - 仓库：https://github.com/TalentedPlayerXXC/dsh-seedream-studio
 - 问题反馈：https://github.com/TalentedPlayerXXC/dsh-seedream-studio/issues
-- npm：https://www.npmjs.com/package/dsh-seedream-studio
 
 ## 安装
 
-在 DSH 里二选一：
+从仓库克隆到本地：
 
-- **图形界面**：**插件** → **添加插件**，填 `dsh-seedream-studio`，装好后启用。
-- **命令行**：`dsh plugin --profile <你的 profile> add dsh-seedream-studio`（`dsh plugin` 会把参数原样转给 pnpm）。
+```bash
+git clone https://github.com/TalentedPlayerXXC/dsh-seedream-studio.git
+```
+
+然后在 DSH 里 **插件** → **添加插件**，选克隆下来的那个目录，装好后启用。
+
+也可以指定克隆位置，方便以后 `git pull` 升级：
+
+```bash
+git clone https://github.com/TalentedPlayerXXC/dsh-seedream-studio.git ~/dsh-plugins/dsh-seedream-studio
+```
 
 装好后左侧边栏出现取景框图标，点进去就是工作台；agent 侧同时多出 `seedream_generate` 工具。**首次使用先在界面顶部配 Key**，没配之前生成按钮是禁用的。
+
+升级就是 `git pull` 之后在插件列表里重载一次。
+
+> 暂未发布到 npm。本插件零第三方依赖，克隆即用，不需要 `npm install`。
 
 ## 它做什么
 
