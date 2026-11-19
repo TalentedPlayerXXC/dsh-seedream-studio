@@ -2,6 +2,22 @@
 
 豆包 Seedream（火山方舟 AgentPlan）生图的图形工作台：侧边栏整页 UI + agent 工具，两条入口共用同一套生成实现。
 
+[![npm](https://img.shields.io/npm/v/dsh-seedream-studio.svg)](https://www.npmjs.com/package/dsh-seedream-studio)
+[![license](https://img.shields.io/npm/l/dsh-seedream-studio.svg)](LICENSE)
+
+- 仓库：https://github.com/TalentedPlayerXXC/dsh-seedream-studio
+- 问题反馈：https://github.com/TalentedPlayerXXC/dsh-seedream-studio/issues
+- npm：https://www.npmjs.com/package/dsh-seedream-studio
+
+## 安装
+
+在 DSH 里二选一：
+
+- **图形界面**：**插件** → **添加插件**，填 `dsh-seedream-studio`，装好后启用。
+- **命令行**：`dsh plugin --profile <你的 profile> add dsh-seedream-studio`（`dsh plugin` 会把参数原样转给 pnpm）。
+
+装好后左侧边栏出现取景框图标，点进去就是工作台；agent 侧同时多出 `seedream_generate` 工具。**首次使用先在界面顶部配 Key**，没配之前生成按钮是禁用的。
+
 ## 它做什么
 
 - **一个整页工作台**：写提示词、选模型（自动 / Flash / Pro）、选尺寸（1K / 1.5K / 2K）、加参考图，点一次生成，图片直接落到本地目录。上方支持 `⌘ ↵` 直接生成，生成中有计时与进度，可随时取消。
